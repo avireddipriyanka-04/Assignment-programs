@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int userId, password;
+    int storedId = 101, storedPass = 4321;
+
+    printf("Enter User ID: ");
+    scanf("%d", &userId);
+
+    if (userId != storedId) {
+        printf("User not found\n");
+    } else {
+        printf("Enter Password: ");
+        scanf("%d", &password);
+
+        if (password == storedPass) {
+            printf("Login successful\n");
+        } else {
+            printf("Incorrect password\n");
+        }
+    }
+
+    return 0;
+}
